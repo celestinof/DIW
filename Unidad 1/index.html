@@ -2,27 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Migas Amigas - Panadería</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migas Amigas - Panadería Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <table border="1" width="100%">
+    <table id="layout-table" width="100%">
         
-        <tr>
-            <td colspan="2">
-                <h1>Migas Amigas</h1>
-                <p>Tu panadería de siempre</p>
+        <tr id="header-row">
+            <td id="header" colspan="2">
                 
-                <p>Idioma: <a href="#">Castellano</a> | <a href="#">Portugués</a></p>
-                
-                <p>[Aquí va la animación del proceso de elaboración del pan]</p>
-            </td>
-        </tr>
+                <div id="language-selector">
+                    <a href="#es" class="lang-flag">[ES]</a>
+                    <a href="#pt" class="lang-flag">[PT]</a>
+                </div>
 
-        <tr>
-            <td width="20%">
-                <h2>Menú Principal</h2>
-                <nav>
+                <h1><a href="index.html">Migas Amigas</a></h1>
+                
+                <nav id="main-nav">
                     <ul>
                         <li><a href="#panaderia">Panadería</a></li>
                         <li><a href="#pasteleria">Pastelería - Bollería</a></li>
@@ -30,40 +32,54 @@
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
+                
+                <div id="animation-placeholder">
+                    <p>[Aquí va la animación (rápida y responsive) del proceso de elaboración del pan]</p>
+                </div>
             </td>
+        </tr>
 
-            <td width="80%">
+        <tr>
+            <td id="main-content" colspan="2">
                 <main>
-                    <h2>Productos y Especialidades</h2>
+                    <h2>Nuestros Productos Artesanales</h2>
 
-                    <section id="panaderia">
+                    <section id="panaderia" class="product-section">
                         <h3>Panadería (Máx. 12 productos)</h3>
-                        <p>Descripción, Ingredientes y Elaboración.</p>
-                        <p>[Fotografía del producto]</p>
-                        </section>
+                        <img src="https://via.placeholder.com/800x600.png?text=Pan+Artesano" alt="Pan artesano" class="product-image">
+                        <p class="product-title">Barra Rústica</p>
+                        <p class="product-description">Elaborada con masa madre, harina de fuerza y un toque de centeno. Larga fermentación.</p>
+                    </section>
 
-                    <section id="pasteleria">
+                    <section id="pasteleria" class="product-section">
                         <h3>Pastelería - Bollería (Máx. 8 productos)</h3>
-                        <p>Descripción, Ingredientes y Elaboración.</p>
-                        <p>[Fotografía del producto]</p>
+                        <img src="https://via.placeholder.com/800x600.png?text=Croissant" alt="Croissant de mantequilla" class="product-image">
+                        <p class="product-title">Croissant de Mantequilla</p>
+                        <p class="product-description">Hojaldre crujiente hecho con mantequilla pura de alta calidad. Perfecto para el desayuno.</p>
                     </section>
                     
-                    <section id="empanadas">
+                    <section id="empanadas" class="product-section">
                         <h3>Empanadas (Máx. 4 productos)</h3>
-                        <p>Descripción, Ingredientes y Elaboración.</p>
-                        <p>[Fotografía del producto]</p>
+                        <img src="https://via.placeholder.com/800x600.png?text=Empanada" alt="Empanada de atún" class="product-image">
+                        <p class="product-title">Empanada de Atún</p>
+                        <p class="product-description">Nuestra receta tradicional con atún, tomate casero, pimiento y huevo cocido.</p>
                     </section>
                 </main>
             </td>
         </tr>
 
         <tr>
-            <td colspan="2">
+            <td id="footer" colspan="2">
                 <footer id="contacto">
                     <h2>Contáctanos</h2>
-                    <p>Dirección: [Calle, Ciudad, País]</p>
-                    <p>Teléfono: [Número de contacto]</p>
-                    <p>[Croquis de la ubicación]</p>
+                    <p>Dirección: Calle del Pan, 123, 28080 Madrid, España</p>
+                    <p>Teléfono: +34 912 345 678</p>
+                    
+                    <div id="map-placeholder">
+                         <p>[Aquí iría el mapa de Google Maps o una imagen clara del croquis]</p>
+                         </div>
+                    
+                    <p class="copyright">&copy; 2025 Migas Amigas. Todos los derechos reservados.</p>
                 </footer>
             </td>
         </tr>
