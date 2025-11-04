@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tarea.css">  
+    <title>Tareaud2</title>
+</head>
+<body>
+    <header>
+    <h1>Agenda</h1>
+    </header>
+    
+
+    
+    <main>
+
+        <h2>Por favor, introduce los datos (nombre, teléfono)</h2>
+        
+         <table id="agenda">
+                   
+            
+            
+            <form> <!--Iniciamos el formulario-->
+            <!--Casillas para la identificación y el teléfono a guarda-->
+            <tr>
+                <td><label for="idusuario">Nombre y apellidos:</label></td>  
+                <td><input type="text" name="idusuario" size="50" placeholder="Introducir nombre y apellidos" required></td>          
+            </tr>
+
+            <tr>
+                <td><label for="telefono">Teléfono:</label></td>
+                <td><input type="number" name="telefono" maxlength="9" placeholder="Introducir teléfono"> </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" name="enviar" class="boton formulario"></td>
+                <td><input type="reset" name="borrar" class="boton formulario" ></td>
+
+            </tr>
+            </form>
+            
+        </table>    
+    
+
+    </main>
+</body>
+</html>
