@@ -15,29 +15,19 @@ background-color: lightblue;
 }
 
 main {
-    font-family: Arial, sans-serif; /*Fuente del texto*/
-    font-size: 18px; /*Tamaño de la fuente*/
-    color: black; /*Color del texto*/
+    font-family: Arial, sans-serif; 
+    font-size: 18px; 
+    color: black; 
 }
 
 
-.formulario-contacto {
-    text-align: center;
-    color: black;
-}
-
-
-
-#agenda {
-
-    
-    
-  /* Propiedades que afectan a toda la tabla */
-  border: 1px solid black; /* Borde de la tabla */
-  padding-left: 20px;
-  width: 40%; /* Ancho de la tabla */
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse; /* Colapsa los bordes de celdas adyacentes en uno solo */
-  margin: 20px auto; /* Centra la tabla y le da un margen superior/inferior */
+.datos_agenda,
+.formulario-contacto,
+.delagenda {
+    border: 2px solid darkblue; /* Borde oscuro */
+    padding: 20px;
+    margin: 20px auto; /* Centrado y con espacio */
+    width: 90%; 
+    max-width: 600px; /* Un ancho máximo en pantallas grandes */
+    background-color: #f9f9f9;
 }

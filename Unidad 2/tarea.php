@@ -1,4 +1,3 @@
-<!------------------------- LÓGICA PHP------------------------------------------>
 <?php
 
 /**Con la funcion "session_start()" preparamos nuestra página para poder llamar a la variable superglobal $_SESSION
@@ -70,17 +69,22 @@ session_start();
              //Como el teléfono también existe, acabamos en 3.1.2.2.
              else {
                 $agenda[$nombre]=$telefono;}          
-}}
 
-    // Lógica de Vaciar (GET), si se pulsa el botón para vaciar la agend. En la primera página no estará disponible (Hasta que haya grabados datos). 
+}}} //Aquí termina el bloque POST
+
+
+ // Lógica de Vaciar (GET), si se pulsa el botón para vaciar la agend. En la primera página no estará disponible (Hasta que haya grabados datos). 
     // Saldrá una vez haya datos en la agenda.
-    if (isset($_GET["borrar_agenda"])) {
+    /**Utilizo else if para que no haya conflicto con el bloque POST anterior. 
+     * Cuando utilizaba dos bloques if independientes, al pulsar el botón de vaciar agenda (GET), el navegador se queda clavado en la URL con el parámetro GET
+     * y si a continuación se pulsa el botón de enviar (POST), el navegador interpreta que se quieren ejecutar ambos bloques (GET y POST) y por algún motivo que no entiendo
+     * no funciona correctamente. Al usar else if, al pulsar el botón de vaciar agenda (GET), solo se ejecuta ese bloque cuando no se ha llamado al POST.*/
+    else if (isset($_GET["borrar_agenda"])) {
     $agenda = [];}
 
-    //ACTUALIZAMOS LA AGENDA CON EL RESULTADO QUE SEA.
-    $_SESSION["agenda"] = $agenda;
+    //ACTUALIZAMOS LA AGENDA CON EL RESULTADO QUE SEA (ya se haya pulsado el POST o el GET)
+    $_SESSION["agenda"] = $agenda;    
 
-    }
 ?>
 
 
@@ -110,7 +114,7 @@ session_start();
 
     ?>
     <!--MODO HTML, que abrirá el div de la agenda solo si se cumple la condicion PHP-->   
-            <div id="datos_agenda"> 
+            <div class="datos_agenda"> 
     <!--MODO PHP, para seguir aplicando la lógica y desde el que imprimimos-->      
            <?php
             echo "<h3> Agenda telefónica </h3>";
@@ -155,24 +159,15 @@ session_start();
     </div>
 
 
-    <!--El último bloque que vacía la agenda, solo debe aparecer si la agenda tiene entradas-->
-    
+    <!--El último bloque, solo debe aparecer si la agenda tiene entradas-->
     <?php
-
-    if (!empty($_SESSION["agenda"])) {?>
- 
-    <form action="" method="GET" id="delagenda">
+    if (!empty($agenda)) {?>
+    <form action="" method="GET" class="delagenda">
         <div>
-            <input type="submit" name="borrar_agenda" value="Vaciar Agenda"></input>
-
-    <?php
-
-    if (isset($_GET["borrar_agenda"])){
-
-        $_SESSION["agenda"]=[];
-
-    } ?> <div> 
+            <input type="submit" name="borrar_agenda" value="Vaciar Agenda">
+        </div>    
     <?php 
-    }?>
+    } ?>
+    
 
 </main>
