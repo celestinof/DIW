@@ -21,14 +21,11 @@ main {
 }
 
 
-h2 {
+.formulario-contacto {
     text-align: center;
-    color: darkblue;
+    color: black;
 }
 
-td, th {
-    padding: 10px; 
-}
 
 
 #agenda {

@@ -6,9 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Vamos a indicar los principales comandos php del módulo</h1>
-    <h2>Tarea 2</h2>
+    
+<h1>Elementos del array $_SERVER</h1>
+<?php //mostrar array $_SERVER
 
+
+foreach($_SERVER as $key => $value) {
+
+    echo "Elemento $key y clave $value <br>";
+} ?>
 
 </body>
 </html>
+
+
