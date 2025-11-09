@@ -4,7 +4,7 @@
  *  y mantener la persistencia de datos durante la sesion (en un archivo temporal que se pierde al cerrar el navegador)*/
 session_start(); 
 
-    /**VARIABLES: 
+    //VARIABLES: 
      
 
     //1. INICIO
