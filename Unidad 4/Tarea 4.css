@@ -1,0 +1,32 @@
+.encabezado {
+    /* 1. Activa el modelo Flex en el contenedor padre */
+    display: flex;
+
+    /* 2. Distribuye los elementos horizontalmente (izq y der) */
+    justify-content: space-between; 
+
+    /* 3. Centra verticalmente el contenido */
+    align-items: center; 
+    
+    background-color: rgb(133, 132, 132);
+    height: 70px; /* Ejemplo de altura */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+header.encabezado ul {
+    /* Convierte la lista en un contenedor horizontal */
+    display: flex;
+
+    /* Opcional: Centra los ítems verticalmente dentro del UL */
+    align-items: center;
+
+    /*Quitar los puntos de lista predeterminados */
+    list-style-type: none;
+  
+}
+
+/* 2. Aplica espaciado entre los LI (los ítems individuales) */
+header.encabezado ul li {
+    /* Esto agrega espacio a la derecha de cada elemento de menú */
+    margin-right: 20px; 
+}
