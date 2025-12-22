@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tarea4.css">
+    <title>Migas Amigas - TodoFP</title>
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="titulo-web">TodoFP</span>
+        </div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Formación</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Alumnos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-web">
+        
+        <aside class="col-izquierda">
+            <form id="formulario">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Enviar" class="btn-enviar">
+            </form>
+
+            <div class="caja-unidades">
+                <h4 class="banner-azul">UNIDADES DE TRABAJO</h4>
+                <ul class="lista-enlaces">
+                    <li><strong>DIW01, 2011</strong></li>
+                    <li><a href="#">Planificación de interfaces...</a></li>
+                    <li><strong>DIW02, 2011</strong></li>
+                    <li><a href="#">Accesibilidad en la Web...</a></li>
+                    <li><strong>DIW03, 2011</strong></li>
+                    <li><a href="#">Usabilidad en la Web...</a></li>
+                    <li><strong>DIW04, 2011</strong></li>
+                    <li><a href="#">Hojas de estilos...</a></li>
+                    <li><strong>DIW05, 2011</strong></li>
+                    <li><a href="#">Contenidos multimedia...</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="col-central">
+            <article class="tarjeta">
+                <header class="tarjeta-header">
+                    <h3>¡BIENVENIDO A TODOFP!</h3>
+                    <span class="fecha">Oct. 10, 2011</span>
+                </header>
+                <div class="tarjeta-cuerpo">
+                    <p><strong>FP a distancia</strong> Esta oferta está dirigida especialmente a aquellas personas que, por diferentes razones, no pueden cursar en centros educativos... <a href="#">FP online</a>.</p>
+                </div>
+                <footer class="tarjeta-footer">Realizado por Celestino Amigo</footer>
+            </article>
+
+            <article class="tarjeta">
+                <header class="tarjeta-header">
+                    <h3>DIW04. HOJAS DE ESTILOS.</h3>
+                    <span class="fecha">Oct. 10, 2011</span>
+                </header>
+                <div class="tarjeta-cuerpo">
+                    <p>"Orden EDU/2887/2010, de 2 de noviembre..."</p>
+                    <p>Conceptos soporte relacionados:</p>
+                    <ol>
+                        <li>Estilos en línea basados en etiquetas y en clases</li>
+                        <li>Hojas de estilo auditivas</li>
+                    </ol>
+                </div>
+                <footer class="tarjeta-footer">Realizado por Celestino Amigo</footer>
+            </article>
+        </main>
+
+        <aside class="col-derecha">
+            <div class="caja-interes">
+                <h4 class="banner-azul">WEBS DE INTERÉS</h4>
+                <ul class="lista-enlaces">
+                    <li><a href="#">TodoFP</a></li>
+                    <li><a href="#">FP online</a></li>
+                    <li><a href="#">Platega</a></li>
+                    <li><a href="#">IES San Clemente</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="pie-pagina">
+        <p>Copyright © 2011 TodoFP. Todos los derechos reservados. Diseñado por www.educacion.gob.es.</p>
+    </footer>
+
+</body>
+</html>

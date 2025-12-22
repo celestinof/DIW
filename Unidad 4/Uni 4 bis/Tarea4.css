@@ -1,0 +1,139 @@
+/* Configuración Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(211, 211, 211); /* Color paleta  */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flexbox Principal [cite: 10, 11] */
+.contenedor-web {
+    display: flex;
+    flex-flow: row wrap; /*  */
+    padding: 10px;
+}
+
+/* Cabecera y Pie ocupan el 100% [cite: 16] */
+.encabezado, .pie-pagina {
+    flex-basis: 100%;
+    background-color: rgb(133, 132, 132); /*  */
+    color: white;
+    padding: 15px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Responsivo [cite: 17] */
+.logo-img {
+    height: 50px;
+    object-fit: contain;
+    object-position: left;
+}
+
+/* Menú Principal [cite: 12] */
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-principal a:hover {
+    background-color: rgb(87, 87, 87); /* Cambio de fondo [cite: 12] */
+}
+
+/* Definición de Columnas [cite: 14, 15] */
+.col-izquierda {
+    flex: 0 1 10%; /* flex-grow, flex-shrink, flex-basis  */
+    padding: 10px;
+}
+
+.col-central {
+    flex: 1 1 50%; /* [cite: 14] */
+    padding: 10px;
+    background-color: rgb(191, 186, 186); /*  */
+}
+
+.col-derecha {
+    flex: 0 1 10%; /* [cite: 15] */
+    padding: 10px;
+}
+
+/* Formulario Flexbox [cite: 21] */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 20px;
+}
+
+/* Estilos de Enlaces [cite: 13] */
+a {
+    color: rgb(60, 116, 230);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none; /* Desaparece subrayado [cite: 13] */
+}
+
+/* Cajas y Banners */
+.banner-azul {
+    background-color: rgb(60, 116, 230); /* Azul  */
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.tarjeta {
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.tarjeta-header {
+    background-color: rgb(60, 116, 230);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Menú space-around < 960px [cite: 18] */
+@media (max-width: 960px) {
+    .menu-principal ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+/* Ocultar columna derecha < 900px [cite: 20] */
+@media (max-width: 900px) {
+    .col-derecha {
+        display: none;
+    }
+}
+
+/* Menú en columna < 600px [cite: 19] */
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+    }
+    .menu-principal ul {
+        flex-direction: column;
+    }
+}

@@ -30,3 +30,20 @@ header.encabezado ul li {
     /* Esto agrega espacio a la derecha de cada elemento de menú */
     margin-right: 20px; 
 }
+
+.colizquierda {
+    margin-top:40PX;
+    
+}
+
+#formulario {
+    
+    border-color: black;
+    border-style: solid;
+}
+
+.udstrabajo {
+
+    background-color: rgb(255,255,255);
+    border-style: solid;
+}
