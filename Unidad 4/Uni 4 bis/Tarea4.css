@@ -1,4 +1,4 @@
-/* Configuración Base */
+/* Configuración cuerpo */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,14 +7,14 @@ body {
     flex-direction: column;
 }
 
-/* Flexbox Principal [cite: 10, 11] */
+/* Flexbox Principal  */
 .contenedor-web {
     display: flex;
     flex-flow: row wrap; /*  */
     padding: 10px;
 }
 
-/* Cabecera y Pie ocupan el 100% [cite: 16] */
+/* Cabecera y Pie ocupan el 100%  */
 .encabezado, .pie-pagina {
     flex-basis: 100%;
     background-color: rgb(133, 132, 132); /*  */
@@ -28,14 +28,14 @@ body {
     align-items: center;
 }
 
-/* Logo Responsivo [cite: 17] */
+/* Logo */
 .logo-img {
     height: 50px;
     object-fit: contain;
     object-position: left;
 }
 
-/* Menú Principal [cite: 12] */
+/* Menú Principal  */
 .menu-principal ul {
     display: flex;
     list-style: none;
@@ -52,24 +52,23 @@ body {
     background-color: rgb(87, 87, 87); /* Cambio de fondo [cite: 12] */
 }
 
-/* Definición de Columnas [cite: 14, 15] */
+/* Definición de Columnas */
 .col-izquierda {
     flex: 0 1 10%; /* flex-grow, flex-shrink, flex-basis  */
     padding: 10px;
 }
 
 .col-central {
-    flex: 1 1 50%; /* [cite: 14] */
+    flex: 1 1 50%; 
     padding: 10px;
-    background-color: rgb(191, 186, 186); /*  */
-}
+    background-color: rgb(191, 186, 186); 
 
 .col-derecha {
-    flex: 0 1 10%; /* [cite: 15] */
+    flex: 0 1 10%; 
     padding: 10px;
 }
 
-/* Formulario Flexbox [cite: 21] */
+/* Formulario Flexbox */
 #formulario {
     display: flex;
     flex-direction: column;
@@ -79,14 +78,14 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos de Enlaces [cite: 13] */
+/* Estilos de Enlaces */
 a {
     color: rgb(60, 116, 230);
     text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: none; /* Desaparece subrayado [cite: 13] */
+    text-decoration: none; /* Desaparece subrayado*/
 }
 
 /* Cajas y Banners */
@@ -113,7 +112,7 @@ a:hover {
 
 /* --- RESPONSIVE --- */
 
-/* Menú space-around < 960px [cite: 18] */
+/* Menú space-around */
 @media (max-width: 960px) {
     .menu-principal ul {
         justify-content: space-around;
@@ -121,14 +120,14 @@ a:hover {
     }
 }
 
-/* Ocultar columna derecha < 900px [cite: 20] */
+/* Ocultar columna derecha */
 @media (max-width: 900px) {
     .col-derecha {
         display: none;
     }
 }
 
-/* Menú en columna < 600px [cite: 19] */
+/* Menú en columna  */
 @media (max-width: 600px) {
     .encabezado {
         flex-direction: column;
@@ -136,4 +135,5 @@ a:hover {
     .menu-principal ul {
         flex-direction: column;
     }
+}
 }
