@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    background-color: #f0f2f5;
+    color: #2c3e50;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#main-content {
+    padding: 30px;
+}
+
+.video-container {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    line-height: 0; /* Evita espacios extra debajo del vídeo */
+}
+
+/* Apartado 7 - Estilo para la caja de accesibilidad */
+.accessibility-description {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-left: 6px solid #3498db;
+    padding: 20px;
+}
+
+.accessibility-description h2 {
+    color: #2980b9;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.accessibility-description p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #444;
+}
+
+#footer {
+    padding: 15px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 11px;
+    border-top: 1px solid #eee;
+    color: #7f8c8d;
+}
