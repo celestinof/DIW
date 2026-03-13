@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+    <title>Formulario de Registro - BK Programación</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+<body>
+    <form action="#" method="post">
+        
+        <p class="aviso-obligatorio">* Los campos marcados con asterisco son obligatorios para el envío.</p>
+
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            
+            <div class="contenedor-campo">
+                <label for="nombre"><span class="asterisco">*</span> Nombre:</label>
+                <input type="text" id="nombre" name="NOMBRE" maxlength="20" accesskey="n" />
+            </div>
+
+            <div class="contenedor-campo">
+                <label for="apellido1"><span class="asterisco">*</span> Primer Apellido:</label>
+                <input type="text" id="apellido1" name="APELLIDO1" maxlength="20" accesskey="p" />
+            </div>
+
+            <div class="contenedor-campo">
+                <label for="apellido2"><span class="asterisco">*</span> Segundo Apellido:</label>
+                <input type="text" id="apellido2" name="APELLIDO2" maxlength="20" accesskey="s" />
+            </div>
+            
+            <div class="contenedor-campo">
+                <span class="pregunta-form"><span class="asterisco">*</span> Sexo:</span>
+                <input type="radio" id="sexo_h" name="SEXO" value="Hombre" accesskey="h" />
+                <label for="sexo_h" class="label-inline">Hombre</label>
+                <input type="radio" id="sexo_m" name="SEXO" value="Mujer" accesskey="m" />
+                <label for="sexo_m" class="label-inline">Mujer</label>
+            </div>
+
+            <div class="contenedor-campo">
+                <span class="pregunta-form"><span class="asterisco">*</span> Grupo de edad:</span>
+                <input type="radio" id="edad1" name="EDAD" value="Menor de 20" accesskey="1" />
+                <label for="edad1" class="label-inline">Menor de 20</label>
+                <input type="radio" id="edad2" name="EDAD" value="20-35" accesskey="2" />
+                <label for="edad2" class="label-inline">20-35</label>
+                </div>
+
+            <div class="contenedor-campo">
+                <label for="pais"><span class="asterisco">*</span> País de nacimiento:</label>
+                <select id="pais" name="PAIS" accesskey="x">
+                    <option value="Alemania">Alemania</option>
+                    <option value="España" selected="selected">España</option>
+                    </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>DATOS BANCARIOS</legend>
+            <div class="contenedor-campo">
+                <label for="ccc">C.C.C:</label>
+                <input type="text" id="ccc" name="CCC" maxlength="20" />
+            </div>
+            </fieldset>
+
+        <fieldset>
+            <legend>OTROS DATOS DE INTERÉS</legend>
+            <p>¿Está usted interesado en alguno de estos temas?</p>
+            <div class="flex-intereses">
+                <div class="columna-checks">
+                    <input type="checkbox" id="info" name="Informatica" />
+                    <label for="info" class="label-inline">Informática</label>
+                </div>
+                <div class="columna-texto">
+                    <label for="otros">Otros temas:</label><br />
+                    <textarea id="otros" rows="4" cols="30">Escriba aquí sus temas...</textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="zona-botones">
+            <input type="submit" value="Enviar datos del formulario" />
+            <input type="reset" value="Limpiar datos del formulario" />
+        </div>
+
+        <p class="aviso-obligatorio">* Fin del formulario. Verifique los datos antes de enviar.</p>
+    </form>
+</body>
+</html>
