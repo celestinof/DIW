@@ -1,14 +1,14 @@
 /* RESET Y GENERALES */
-/* Sustituyo el atributo 'text="purple"' del body original [cite: 316, 298] */
+/* Sustituyo el atributo 'text="purple"' del body original */
 body {
     background-image: url('Fondo.jpg');
-    color: purple; /* Aplicamos el color púrpura a todo el texto según el requisito [cite: 298] */
+    color: purple; /* Aplicamos el color púrpura a todo el texto según el requisito */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 30px;
 }
 
 /* DISEÑO DE CAJAS (LAYOUT) */
-/* En lugar de tablas de ancho 100%, uso fieldsets con márgenes [cite: 292, 316] */
+/* En lugar de tablas de ancho 100%, uso fieldsets con márgenes */
 fieldset {
     border: 1px solid purple;
     margin-bottom: 25px;
@@ -23,14 +23,14 @@ legend {
 }
 
 /* ALINEACIÓN SIN TABLAS */
-/* Uso bloques para que las etiquetas y los inputs se alineen correctamente [cite: 291] */
+/* Uso bloques para que las etiquetas y los inputs se alineen correctamente */
 .contenedor-campo {
     margin-bottom: 15px;
 }
 
 label {
     display: inline-block;
-    width: 200px; /* Ancho fijo para simular la columna de la tabla original [cite: 318] */
+    width: 200px; /* Ancho fijo para simular la columna de la tabla original */
     vertical-align: top;
 }
 
@@ -41,34 +41,34 @@ label {
 
 /* SEMÁNTICA DE COLORES */
 .asterisco, .aviso-obligatorio {
-    color: #cc0000; /* Color rojo para resaltar campos obligatorios [cite: 312] */
+    color: #cc0000; /* Color rojo para resaltar campos obligatorios */
     font-weight: bold;
 }
 
 /* INTERACTIVIDAD CON CSS (Pseudoclases) */
 /* Esto cumple con "dotado de interactividad independiente del dispositivo"  */
 
-/* Cuando el usuario pasa el ratón (hover) o usa el teclado (focus) [cite: 90, 307] */
+/* Cuando el usuario pasa el ratón (hover) o usa el teclado (focus) */
 input:hover, select:hover, textarea:hover {
     border-color: #ff00ff;
     background-color: #f0f0f0;
 }
 
-/* El estado :focus es VITAL para la accesibilidad por teclado [cite: 90, 310] */
+/* El estado :focus es VITAL para la accesibilidad por teclado */
 input:focus, select:focus, textarea:focus {
     background-color: #fffacd; /* Fondo amarillo suave para resaltar el campo activo */
     border: 2px solid purple;
-    outline: none;
+    outline: 2px solid #ff00ff; /* Añado un contorno extra para que se vea mejor al tabular */
 }
 
-/* Estilo para los botones al pulsarlos (active) [cite: 90, 108] */
+/* Estilo para los botones al pulsarlos (active) */
 input[type="submit"]:active, input[type="reset"]:active {
     transform: translateY(2px);
     background-color: #4b0082;
     color: white;
 }
 
-/* Estilos de botones para que no parezcan simples [cite: 104] */
+/* Estilos de botones para que no parezcan simples */
 input[type="submit"], input[type="reset"] {
     padding: 10px 20px;
     border-radius: 5px;
@@ -77,4 +77,13 @@ input[type="submit"], input[type="reset"] {
     background-color: #f8f8f8;
     color: purple;
     font-weight: bold;
+}
+
+/* Ajustes para el textarea y el área de otros temas */
+.flex-intereses {
+    margin-top: 10px;
+}
+
+textarea {
+    margin-top: 5px;
 }

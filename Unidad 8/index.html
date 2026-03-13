@@ -11,46 +11,46 @@
         
         <p class="aviso-obligatorio">* Los campos marcados con asterisco son obligatorios para el envío.</p>
 
-        <fieldset>
+            <fieldset>
             <legend>DATOS PERSONALES</legend>
             
             <div class="contenedor-campo">
                 <label for="nombre"><span class="asterisco">*</span> Nombre:</label>
-                <input type="text" id="nombre" name="NOMBRE" maxlength="20" accesskey="n" />
+                <input type="text" id="nombre" name="NOMBRE" maxlength="20" accesskey="n" title="Introduzca su nombre" />
             </div>
 
             <div class="contenedor-campo">
                 <label for="apellido1"><span class="asterisco">*</span> Primer Apellido:</label>
-                <input type="text" id="apellido1" name="APELLIDO1" maxlength="20" accesskey="p" />
+                <input type="text" id="apellido1" name="APELLIDO1" maxlength="20" accesskey="p" title="Introduzca su primer apellido" />
             </div>
 
             <div class="contenedor-campo">
                 <label for="apellido2"><span class="asterisco">*</span> Segundo Apellido:</label>
-                <input type="text" id="apellido2" name="APELLIDO2" maxlength="20" accesskey="s" />
+                <input type="text" id="apellido2" name="APELLIDO2" maxlength="20" accesskey="s" title="Introduzca su segundo apellido" />
             </div>
             
             <div class="contenedor-campo">
                 <span class="pregunta-form"><span class="asterisco">*</span> Sexo:</span>
-                <input type="radio" id="sexo_h" name="SEXO" value="Hombre" accesskey="h" />
+                <input type="radio" id="sexo_h" name="SEXO" value="Hombre" accesskey="h" title="Seleccione si es Hombre" />
                 <label for="sexo_h" class="label-inline">Hombre</label>
-                <input type="radio" id="sexo_m" name="SEXO" value="Mujer" accesskey="m" />
+                <input type="radio" id="sexo_m" name="SEXO" value="Mujer" accesskey="m" title="Seleccione si es Mujer" />
                 <label for="sexo_m" class="label-inline">Mujer</label>
             </div>
 
             <div class="contenedor-campo">
                 <span class="pregunta-form"><span class="asterisco">*</span> Grupo de edad:</span>
-                <input type="radio" id="edad1" name="EDAD" value="Menor de 20" accesskey="1" />
+                <input type="radio" id="edad1" name="EDAD" value="Menor de 20" accesskey="1" title="Menor de 20 años" />
                 <label for="edad1" class="label-inline">Menor de 20</label>
-                <input type="radio" id="edad2" name="EDAD" value="20-35" accesskey="2" />
+                <input type="radio" id="edad2" name="EDAD" value="20-35" accesskey="2" title="Entre 20 y 35 años" />
                 <label for="edad2" class="label-inline">20-35</label>
-                </div>
+            </div>
 
             <div class="contenedor-campo">
-                <label for="pais"><span class="asterisco">*</span> País de nacimiento:</label>
-                <select id="pais" name="PAIS" accesskey="x">
+                <label for="pais" accesskey="x"><span class="asterisco">*</span> País de nacimiento:</label>
+                <select id="pais" name="PAIS" title="Seleccione su país de origen">
                     <option value="Alemania">Alemania</option>
                     <option value="España" selected="selected">España</option>
-                    </select>
+                </select>
             </div>
         </fieldset>
 
